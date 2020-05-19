@@ -99,13 +99,13 @@
 		14C35867247365ED00933B4D /* appSuggest */ = {
 			isa = PBXGroup;
 			children = (
+				14C358992473668E00933B4D /* Controller */,
+				14C3589A247366A800933B4D /* Model */,
+				14C358982473667600933B4D /* View */,
+				14C35871247365EF00933B4D /* Assets.xcassets */,
+				14C35876247365EF00933B4D /* Info.plist */,
 				14C35868247365ED00933B4D /* AppDelegate.swift */,
 				14C3586A247365ED00933B4D /* SceneDelegate.swift */,
-				14C3586C247365ED00933B4D /* ViewController.swift */,
-				14C3586E247365ED00933B4D /* Main.storyboard */,
-				14C35871247365EF00933B4D /* Assets.xcassets */,
-				14C35873247365EF00933B4D /* LaunchScreen.storyboard */,
-				14C35876247365EF00933B4D /* Info.plist */,
 			);
 			path = appSuggest;
 			sourceTree = "<group>";
@@ -126,6 +126,30 @@
 				14C3588C247365EF00933B4D /* Info.plist */,
 			);
 			path = appSuggestUITests;
+			sourceTree = "<group>";
+		};
+		14C358982473667600933B4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14C3586E247365ED00933B4D /* Main.storyboard */,
+				14C35873247365EF00933B4D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14C358992473668E00933B4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14C3586C247365ED00933B4D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		14C3589A247366A800933B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
