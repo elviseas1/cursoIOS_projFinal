@@ -1,0 +1,6 @@
+framework module Pods_appSuggest {
+  umbrella header "Pods-appSuggest-umbrella.h"
+
+  export *
+  module * { export * }
+}

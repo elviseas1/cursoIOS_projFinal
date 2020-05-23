@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="235" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xw0-XP-IL0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="235" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xw0-XP-IL0" userLabel="tableView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appCell" rowHeight="235" id="djb-VZ-zO2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appCell" rowHeight="235" id="djb-VZ-zO2" customClass="AppTableViewCell" customModule="appSuggest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djb-VZ-zO2" id="LFS-aN-uwA">
@@ -55,22 +55,22 @@
                                                                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" id="l13-Ce-62r">
-                                                                    <rect key="frame" x="34.5" y="0.0" width="34.5" height="53"/>
+                                                                    <rect key="frame" x="34.5" y="0.0" width="34.5" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" id="aaS-rc-uqo">
-                                                                    <rect key="frame" x="69" y="0.0" width="34.5" height="53"/>
+                                                                    <rect key="frame" x="69" y="0.0" width="34.5" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" id="Kkv-gV-g8S">
-                                                                    <rect key="frame" x="103.5" y="0.0" width="34.5" height="53"/>
+                                                                    <rect key="frame" x="103.5" y="0.0" width="34.5" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" id="tgU-pK-cli">
-                                                                    <rect key="frame" x="138" y="0.0" width="34.5" height="53"/>
+                                                                    <rect key="frame" x="138" y="0.0" width="34.5" height="35"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                                                 </imageView>
@@ -113,6 +113,12 @@
                                                 <constraint firstItem="F2Y-DC-5ht" firstAttribute="centerY" secondItem="OMm-gx-j5O" secondAttribute="centerY" id="x5q-B9-TtZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageBG" destination="DLl-dz-YGe" id="sRM-0J-F9g"/>
+                                            <outlet property="name" destination="F2Y-DC-5ht" id="ufE-OM-B6r"/>
+                                            <outlet property="preco" destination="2dX-IN-n1o" id="xKr-la-Oqm"/>
+                                            <outlet property="stackEstrelas" destination="emN-R1-f8y" id="bVH-LL-RTv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -127,7 +133,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="tabView" destination="xw0-XP-IL0" id="rGK-rk-7ih"/>
+                        <outlet property="tableView" destination="xw0-XP-IL0" id="MCT-P5-CqS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
